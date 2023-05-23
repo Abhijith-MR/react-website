@@ -1,0 +1,78 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 170px;
+  background: transparent;
+
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  transition: box-shadow 0.5s ease-in-out;
+  z-index: 100;
+}
+.navbar.active{
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+
+.logo {
+  width: 30%;
+  height: 100%;
+  /* border: 1px solid black; */
+
+}
+
+.menu {
+  width: 70%;
+  height: 100%;
+  /* border: 1px solid rgb(144, 116, 116); */
+  display: flex;
+  align-items: center;
+  padding-left: 250px;
+
+}
+
+.item {
+  margin: 24px;
+  padding: 0px;
+  cursor: pointer;
+  font-size: 18px;
+
+
+
+}
+
+.item:hover {
+  color: #ff4c3b;
+}
+
+.logo-image {
+  width: 243px;
+  height: 126px;
+  position: relative;
+  top: 20px;
+  padding-left: 80px;
+
+}
+
+.Setting {
+  padding-left: 80px;
+  cursor: pointer;
+  
+  
+}
+
+.options {
+  position: absolute;
+  background-color: white;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px 30px 30px 30px;
+  top: 70%;
+  margin-left: 40%;
+  cursor: pointer;
+}
+  
+.options p:hover {
+  background-color: lightblue;
+}

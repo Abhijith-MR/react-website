@@ -1,0 +1,48 @@
+img {
+    width: 220px;
+    height: 150px;
+}
+
+.imageInfo {
+    margin-left: 5%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.fa {
+    font-size: 16px;
+}
+
+.fa-star {
+    color: gold;
+}
+
+.fa-star:nth-child(5) {
+    color: gray;
+}
+
+.rating {
+    margin-top: 0;
+}
+
+h6 {
+    color: grey;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 13px;
+    font-family:  sans-serif;
+    
+}
+
+.Price {
+
+    margin-top: -20px;
+    font-size: 16px;
+}
+del{
+    color: #777;
+    font-size: 14px;
+    font-weight: 500;
+}
