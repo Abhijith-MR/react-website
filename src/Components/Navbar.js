@@ -30,7 +30,7 @@ export default function Navbar() {
   const handleIconLeave = () => {
     timeoutId = setTimeout(() => {
       setShowOptions(false);
-    }, 2000); 
+    }, 3000); 
   };
 
 
