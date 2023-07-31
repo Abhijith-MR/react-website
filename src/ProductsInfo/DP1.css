@@ -1,0 +1,254 @@
+/* .Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(247, 247, 247);
+    align-items: center;
+    height: 100px;
+}
+
+.Middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+img {
+    width: 400px;
+    height: 350px;
+    margin-top: 60px;
+    padding-left: 200px;
+}
+
+.MiddleRight {
+    margin-top: 40px;
+    padding-right: 200px;
+    font-size: medium;
+}
+
+.MiddleLeft {
+    padding-right: 30px;
+}
+
+.name {
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.DatePicker {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+label {
+    font-size: smaller;
+}
+
+.title {
+    color: #222;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+
+.price {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.dotted-line {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.dotted-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dotted #000;
+}
+
+.btn {
+    border: 1px solid white;
+    padding: 7px 25px;
+    background-color: rgb(255, 59, 59);
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 0;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(255, 5, 5);
+
+}
+
+.dotted-line1 {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.dotted-line1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dotted #000;
+}
+
+.Details h5 {
+    margin-bottom: -5px;
+}
+
+.Details p {
+    font-size: 13px;
+    color: #777;
+}
+
+.dotted-line2 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.dotted-line2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dotted #000;
+}
+
+.icons {
+    margin-top: -5px;
+}
+
+.icon1 {
+    color: black;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.icon1:hover {
+    color: red;
+}
+
+.dotted-line3 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.dotted-line3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dotted #000;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 10px 0px;
+    background-color: rgb(226, 221, 221);
+}
+
+.text {
+    font-size: x-small;
+    font-family: Arial, sans-serif;
+}
+
+.Bottom {
+    display: flex;
+    flex-direction: row;
+    padding-left: 150px;
+
+}
+
+.Bottom p {
+    padding-left: 60px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.Line {
+    width: 800px;
+    height: 0.1px;
+    margin-left: 195px;
+    border: 0.1px solid rgb(235, 229, 229);
+
+}
+
+.Info {
+
+    font-family: Arial, sans-serif;
+    color: grey;
+    font-size: smaller;
+    align-items: center;
+}
+
+.Info h5 {
+    padding-left: 59px;
+}
+
+.Info p {
+    width: 780px;
+}
+
+.active {
+    color: red;
+    text-decoration: none;
+    position: relative;
+}
+
+.active:after {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+
+    border-width: 0 0 2px;
+    border-style: solid;
+}
+
+b {
+    cursor: pointer;
+}
+
+#I1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.Title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 40px;
+    margin-right: 600px;
+    padding-left: 150px;
+    margin-bottom: 20px;
+    font-size: small;
+}
+
+ul {
+    list-style-type: square;
+} */

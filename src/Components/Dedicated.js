@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import myImage1 from '../Images/image1.jpg';
 import myImage2 from '../Images/image2.jpg';
 import myImage3 from '../Images/image3.jpg';
 import myImage4 from '../Images/image4.png';
 import './Dedicated.css';
+import DP1 from '../ProductsInfo/DP1';
+import { Link } from 'react-router-dom';
 
 
 
 export default function Dedicated() {
+
   return (
     <div className='imageInfo'>
       <div className='card1'>
-        <img src={myImage1} alt="My Image" />
+        
+        
+          <img src={myImage1} alt="My Image" />
+       
         <div class='rating'>
           <i class="fa fa-star" aria-hidden='true'></i>
           <i class="fa fa-star" aria-hidden='true'></i>
@@ -27,6 +33,7 @@ export default function Dedicated() {
           </del>
         </h4>
       </div>
+
 
       <div className='card2'>
         <img src={myImage2} alt="My Image" />
@@ -84,4 +91,4 @@ export default function Dedicated() {
 
     </div>
   );
-}
+};

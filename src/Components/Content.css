@@ -40,6 +40,27 @@
     opacity: 1;
 }
 
+.custom-datepicker:hover {
+    border-color: #000;
+  }
+  
+  .CheckIn {
+    position: relative;
+  }
+  .CheckOut {
+    position: relative;
+  }
+  .custom-datepicker {
+    display: inline-block;
+  }
+  
+  .date-range-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(0%);
+  }
+
 .footer {
     display: flex;
     flex-direction: row;
@@ -53,18 +74,19 @@
 
 }
 
-.footer-content1 {
+.footer-content1  {
     font-size: small;
     font-family: 16px sans-serif;
     color: gray;
     cursor: pointer;
 }
 
+
 .footer-content2 {
     font-size: small;
     font-family: 16px sans-serif;
     color: gray;
-    cursor: pointer;
+    
 }
 
 h4 {
@@ -83,9 +105,7 @@ h4 {
     margin-left: -13%;
 }
 
-.icons:hover {
-    color: red;
-}
+
 
 .icon1 {
     margin-left: 11%;
@@ -95,50 +115,26 @@ h4 {
     margin-top: 15%;
 }
 
-a {
+.F1 {
     position: relative;
     text-decoration: none;
 }
 
-a::after {
+.F1::after {
     content: '';
     position: absolute;
     bottom: -10px;
     left: 0;
     width: 0;
     height: 2px;
-    background-color: red;
+    background-color: red;  
     /* Adjust the color of the underline as needed */
     transition: 0.3s;
 }
 
-a:hover::after {
+.F1:hover::after {
     width: 100%;
 }
-
-/*.Loc-Date {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: 1px solid black;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-radius: 50px;
-
-}
-
-.Search .Srh {
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-}
-.Location h4{
-    margin-bottom: -25%;
-}
-.Location p{
-    color: grey;;
-}
-*/
 
 .Loc-Date {
     display: flex;
