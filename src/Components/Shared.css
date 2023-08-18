@@ -8,7 +8,7 @@ img {
     margin-top: 3%;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 
 .fa {
@@ -45,4 +45,17 @@ del{
     color: #777;
     font-size: 14px;
     font-weight: 500;
+}
+.hoverIconsSP1{
+    display: flex;
+    flex-direction: column;
+    margin-left: -200px;
+    margin-top: 30px;
+    color: lightgrey;
+    row-gap: 4px;
+    
+}
+.IconDP1:hover{
+    color: red;
+    
 }

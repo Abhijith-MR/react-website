@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './DP1.css';
-import myImage1 from '../Images/image1.jpg';
-import D1 from '../Images/D1.jpg';
+import myImage2 from '../Images/image2.jpg';
+import D2 from '../Images/D2.jpg';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import DateRangeIcon from '@mui/icons-material/DateRange';
@@ -15,17 +15,15 @@ import Checkout from '../Components/Checkout';
 import { BrowserRouter, Router, Routes, Route, Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
-
-export default function DP1() {
+export default function DP2() {
 
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const quantity = parseInt(queryParams.get('quantity'), 10) || 1;
 
-  const productPrice = 1260; // Replace this with your actual product price
+  const productPrice = 1800; // Replace this with your actual product price
 
   const estimatedCost = productPrice * quantity;
-
 
 
   const [activeTitle, setActiveTitle] = React.useState("Default");
@@ -107,7 +105,7 @@ export default function DP1() {
   const [mins, setMinutes] = useState(0);
   const [secs, setSeconds] = useState(0);
 
-  const deadline = "Auguast, 15, 2023"
+  const deadline = "Auguast, 30, 2023"
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
@@ -130,7 +128,6 @@ export default function DP1() {
 
   return (
     <div>
-
       {showCheckout ? (
         <Checkout />
       ) : (
@@ -143,23 +140,20 @@ export default function DP1() {
               <h5>HOME / PRODUCT</h5>
             </div>
           </div>
-
-
           <div className='Middle'>
             <div className='MiddleLeft'>
-              <img className='Image' src={myImage1} alt="My Image" />
-              <img className='Image' src={D1} alt="My Image" />
+              <img className='Image' src={myImage2} alt="My Image" />
+              <img className='Image' src={D2} alt="My Image" />
             </div>
 
 
-
             <div className='MiddleRight'>
-              <h3>ROYSTEN COLD STORAGES AND WAREHOUSES FACILITIES</h3>
+              <h3>PATEL WAREHOUSE</h3>
               <del>
-                ₹14/Sqft/Day
+                ₹20/Sqft/Day
               </del>
               <span style={redTextStyle}> 10% Off</span>
-              <p><h4>₹12.6/sqft/day</h4></p>
+              <p><h4>₹18/sqft/day</h4></p>
               <p className='name'>Dedicated</p>
               <div className="dotted-line1"></div>
               <div className='DatePicker'>
@@ -182,15 +176,15 @@ export default function DP1() {
               <p className='price'>₹{estimatedCost}</p>
               {!showCheckout && (
                 <Link to='/Checkout'>
-                  <Link to={`/Checkout?cardName=DP1&quantity=${quantity}`}>
-                  <button className='btn' onClick={() => setShowCheckout(true)}>BOOK NOW</button>
+                  <Link to={`/Checkout?cardName=DP2&quantity=${quantity}`}>
+                    <button className='btn' onClick={() => setShowCheckout(true)}>BOOK NOW</button>
                   </Link>
                 </Link>
               )}
               <div className="dotted-line1"></div>
               <div className='Details'>
                 <h5>Product Details</h5>
-                <p>Here at roysten cold storages and warehouses facilities, we provide cold storages and warehousing option, Available for rent. Contact Us.</p>
+                <p>Here at Patel warehouse, multiple spaces are available for rent.</p>
               </div>
               <div className="dotted-line2"></div>
 
@@ -234,7 +228,6 @@ export default function DP1() {
             </div>
           </div>
 
-
           <div>
             <div className='Title-container'>
               <div
@@ -264,13 +257,9 @@ export default function DP1() {
               {activeTitle === "AMENITIES" && amenities}
               {activeTitle === "REVIEWS" && reviews}
             </div>
-
-
           </div>
-
         </div>
-      )}
+      )};
     </div>
-
   );
 };

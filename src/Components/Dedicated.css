@@ -46,3 +46,207 @@ del{
     font-size: 14px;
     font-weight: 500;
 }
+
+
+.hoverIconsDP1{
+    display: flex;
+    flex-direction: column;
+    margin-left: -98px;
+    margin-top: 30px;
+    color: lightgrey;
+    row-gap: 4px;
+    
+}
+ .iconDP1:hover {
+    color: red;
+    
+  }
+
+.popup {
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    height: 372px;
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+  
+  .close-btn {
+    cursor: pointer;
+    font-size: 15px;
+    padding-left: 330px;
+    
+  }
+  
+  .close-btn:hover {
+    color: red;
+  }
+ 
+  .Popup-left img{
+    width: 350px;
+    height: 300px;
+  }
+   .Popup-right h3{
+    padding-left: 20px;
+    padding-bottom: 50px;
+    margin-top: -30px;
+    font-family: 10px sans-serif;
+  }
+  .DP1Price{
+    padding-left: 20px;
+    margin-top: -58px;
+    font-size: 25px;
+  }
+  .Popdotted-line1 {
+    position: relative;
+    margin-left: 22px;
+    margin-top: -16px;
+}
+
+.Popdotted-line1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dotted #000;
+}
+.PopDetails{
+    margin-left: 22px;
+    font-family:10px Lato, sans-serif;
+    padding-top: 1px;
+    
+}
+.PopDetails p{
+    margin-top: -11px;
+    font-size:14px;
+}
+.Popdotted-line2 {
+    position: relative;
+    margin-left: 22px;
+    margin-top: -6px;
+}
+
+.Popdotted-line2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dotted #000;
+}
+.PopQTY{
+    margin-left: 22px;
+    padding-top: 1px;
+}
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    padding-left: 22px;
+  }
+  
+  .quantity-button {
+    font-size: 1.2rem;
+    padding: 0.2rem 0.6rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .quantity-input {
+    width: 4rem;
+    height: 1.1rem;
+    text-align: center;
+  }
+  .btnDP1{
+    border: 1px solid white;
+    padding: 7px 25px;
+    background-color: rgb(255, 59, 59);
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 0;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.btnDP1:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(255, 5, 5);
+}
+.DP1-buttons{
+    padding-left:22px;
+    padding-top:30px;
+    gap:5px;
+}
+
+.Popup-left-right{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.Popup-left-right img{
+  width: 150px;
+  height: 140px;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+.Popup-left-right h5{
+  margin-top: -10px;
+  font-weight: 500;
+}
+.Comparebtn{
+  border: 1px solid white;
+  padding: 8px 20px;
+  background-color: rgb(255, 59, 59);
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 0;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 60px;
+ padding-bottom: -20px;
+ justify-content: center;
+}
+
+
+.Comparebtn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(255, 5, 5);
+}
+.close-btn1{
+  margin-left: -38px;
+  padding-bottom: 90px;
+  cursor: pointer;
+  font-size: 15px;
+  
+} 
+  .close-btn1:hover {
+    color: red;
+  }

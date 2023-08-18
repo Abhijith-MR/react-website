@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Navbar.css'
 import SettingsIcon from '@mui/icons-material/Settings';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, useNa } from 'react-router-dom';
 
 
 
@@ -48,10 +48,11 @@ export default function Navbar() {
 
 
 
+
   return (
     <div className={navbar ? 'navbar active' : 'navbar'}>
       <div className="logo">
-        <img className="logo-image" src="https://bizzrupt-warehouse-frontend-m9owt6fxk-gowdavishwajith-gmailcom.vercel.app/assets/images/icon/logo_final.png" alt="My Image" onClick={handleLogoClick}/>
+        <a href='/'><img className="logo-image" src="https://bizzrupt-warehouse-frontend-m9owt6fxk-gowdavishwajith-gmailcom.vercel.app/assets/images/icon/logo_final.png" alt="My Image" onClick={handleLogoClick}/></a>
       </div>
       <nav className="menu">
         <Link className="item" to="/rent-now" target="_blank">RENT NOW</Link>

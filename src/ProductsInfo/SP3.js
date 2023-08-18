@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './DP1.css';
-import myImage1 from '../Images/image1.jpg';
-import D1 from '../Images/D1.jpg';
+import myImage7 from '../Images/image7.jpg';
+import S3 from '../Images/S3.jpg';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import DateRangeIcon from '@mui/icons-material/DateRange';
@@ -11,22 +11,43 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import RssFeedIcon from '@mui/icons-material/RssFeed';
 import Search from '../Images/Search.png';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Checkout from '../Components/Checkout';
 import { BrowserRouter, Router, Routes, Route, Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 
-export default function DP1() {
+export default function SP3() {
+
 
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const quantity = parseInt(queryParams.get('quantity'), 10) || 1;
 
-  const productPrice = 1260; // Replace this with your actual product price
+  const productPrice = 1080; // Replace this with your actual product price
 
   const estimatedCost = productPrice * quantity;
 
 
+  // const [quantity, setQuantity] = useState(1);
+
+  // const handleDecrease = () => {
+  //   if (quantity > 1) {
+  //     setQuantity(quantity - 1);
+  //   } else {
+  //     setQuantity(1); // Reset quantity to 1
+  //     setEstimatedCost(1080); // Reset estimated cost to default
+  //   }
+  // };
+  // const handleIncrease = () => {
+  //   setQuantity(quantity + 1);
+  // };
+
+  // const handleInputChange = (event) => {
+  //   const newQuantity = parseInt(event.target.value, 10);
+  //   setQuantity(newQuantity);
+  // };
 
   const [activeTitle, setActiveTitle] = React.useState("Default");
 
@@ -107,7 +128,7 @@ export default function DP1() {
   const [mins, setMinutes] = useState(0);
   const [secs, setSeconds] = useState(0);
 
-  const deadline = "Auguast, 15, 2023"
+  const deadline = "Auguast, 25, 2023"
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
@@ -122,19 +143,28 @@ export default function DP1() {
     return () => clearInterval(interval)
   }, [])
 
+  // const [estimatedCost, setEstimatedCost] = useState(1080);
+
+  // const handle30x30Click = () => {
+  //   setEstimatedCost(9720);
+  // };
+
+  // const totalEstimatedCost = estimatedCost * quantity;
+
   const [showCheckout, setShowCheckout] = useState(false);
 
   const handleBookNowClick = () => {
     setShowCheckout(true);
   };
 
+
   return (
     <div>
-
       {showCheckout ? (
         <Checkout />
       ) : (
         <div>
+
           <div className='Top'>
             <div className='TopLeft'>
               <h5>PRODUCT</h5>
@@ -143,25 +173,47 @@ export default function DP1() {
               <h5>HOME / PRODUCT</h5>
             </div>
           </div>
-
-
           <div className='Middle'>
             <div className='MiddleLeft'>
-              <img className='Image' src={myImage1} alt="My Image" />
-              <img className='Image' src={D1} alt="My Image" />
+              <img className='Image' src={myImage7} alt="My Image" />
+              <img className='Image' src={S3} alt="My Image" />
             </div>
 
 
-
             <div className='MiddleRight'>
-              <h3>ROYSTEN COLD STORAGES AND WAREHOUSES FACILITIES</h3>
+              <h3>BIZRUPT GOA</h3>
               <del>
-                ₹14/Sqft/Day
+                12/Sqft/Day
               </del>
               <span style={redTextStyle}> 10% Off</span>
-              <p><h4>₹12.6/sqft/day</h4></p>
-              <p className='name'>Dedicated</p>
-              <div className="dotted-line1"></div>
+              <p><h4>₹10.8/sqft/day</h4></p>
+              <p className='name'>Shared</p>
+
+
+              <p className='title'>Select Pallet Size</p>
+              <p><span className='Total'>20 X 20</span></p>
+              <p className='title' style={redTextStyle}>In Stock</p>
+
+              <div className='PopQTY1' >
+                <h5>Quantity</h5>
+              </div>
+              <div className="quantity-selector1">
+                <button className="quantity-button" >
+                  <ChevronLeftIcon />
+                </button>
+                <input
+                  type="number"
+                  className="quantity-input"
+                  min="1"
+                  value={quantity}
+                  // onChange={handleInputChange}
+                />
+                <button className="quantity-button" >
+                  <ChevronRightIcon />
+                </button>
+              </div>
+
+              <div className="dotted-line"></div>
               <div className='DatePicker'>
                 <div className='CheckIn'>
                   <label>From</label>
@@ -182,15 +234,15 @@ export default function DP1() {
               <p className='price'>₹{estimatedCost}</p>
               {!showCheckout && (
                 <Link to='/Checkout'>
-                  <Link to={`/Checkout?cardName=DP1&quantity=${quantity}`}>
-                  <button className='btn' onClick={() => setShowCheckout(true)}>BOOK NOW</button>
+                  <Link to={`/Checkout?cardName=SP3&quantity=${quantity}`}>
+                    <button className='btn' onClick={() => setShowCheckout(true)}>BOOK NOW</button>
                   </Link>
                 </Link>
               )}
               <div className="dotted-line1"></div>
               <div className='Details'>
                 <h5>Product Details</h5>
-                <p>Here at roysten cold storages and warehouses facilities, we provide cold storages and warehousing option, Available for rent. Contact Us.</p>
+                <p>Some cool decription. </p>
               </div>
               <div className="dotted-line2"></div>
 
@@ -234,7 +286,6 @@ export default function DP1() {
             </div>
           </div>
 
-
           <div>
             <div className='Title-container'>
               <div
@@ -264,13 +315,9 @@ export default function DP1() {
               {activeTitle === "AMENITIES" && amenities}
               {activeTitle === "REVIEWS" && reviews}
             </div>
-
-
           </div>
-
         </div>
       )}
     </div>
-
   );
 };

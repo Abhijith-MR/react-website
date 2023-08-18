@@ -1,0 +1,99 @@
+.TopCheckout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(247, 247, 247);
+    align-items: center;
+    height: 100px;
+    margin-left:-160px;
+    width: auto;
+    margin-right: -56px;
+}
+.Row1 {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.Row1 h5{
+    font-family: Lato,sans-serif;
+    font-weight: 600;
+}
+.Row2{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.Row2 h5{
+    font-family: Lato,sans-serif;
+    font-weight: 600;
+}
+#country{
+    width: 387px;
+    height: 35px;
+    font-size:small;
+    border:1px solid lightgray;
+}
+                    
+#adress{
+    width: 372px;
+}
+#city{
+    width: 372px;
+}
+#state{
+    width: 372px;
+}
+#code{
+    width: 372px;
+}
+#account{
+    margin-top: 25px;
+    
+}
+.Row8{
+    color: grey;
+}
+.Left{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.Checkout-content{
+    display: flex;
+    flex-direction: row;
+}
+.Right{
+    border:1px solid lightgray;
+    background-color: rgb(247, 247, 247);
+    width: 540px;
+    height: 800px;
+    margin-top: 70px;
+    margin-left: 50px;
+
+}
+.Right-div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 20px;
+    gap: 250px;
+    font-family: sans-serif;
+}
+.dotted-line {
+    position: relative;
+    padding-bottom: 10px;
+    margin-left: 50px;
+}
+
+.dotted-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    border-bottom: 1px solid lightgray;
+}
+.Price-Cal{
+    margin-left: 50px;
+    margin-top: 15px;
+}
